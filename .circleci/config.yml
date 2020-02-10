@@ -8,7 +8,7 @@ jobs:
         - checkout
         - run:
             name: install docker
-            command: apt install -y docker.io
+            command: apk add docker
         - run:
             name: Build Docker image
             command: docker build -t samirsilwal/test-ui:latest 
