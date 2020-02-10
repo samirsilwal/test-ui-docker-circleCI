@@ -21,8 +21,8 @@ jobs:
         - run:
             name: Publish Docker Image to Docker Hub
             command: |
-            echo "Sam525223@4" | docker login -u "samirsilwal" --password-stdin
-            docker push samirsilwal/test-ui:latest
+                echo "Sam525223@4" | docker login -u "samirsilwal" --password-stdin
+                docker push samirsilwal/test-ui:latest
           
 workflows:
     version: 2
