@@ -1,5 +1,13 @@
 version: 2.0
 jobs:
     build:
+      environment:
+        IMAGE_NAME: samirsilwal/test-ui
       docker:
         - image: samirsilwal/test-ui:0.0.1
+
+    steps:
+        - checkout
+        - run:
+            name: Build Docker image
+            command: docker build -t $IMAGE_NAME:latest 
