@@ -6,7 +6,7 @@ jobs:
       docker:
         - image: samirsilwal/test-ui:0.0.1
 
-    steps:
+      steps:
         - checkout
         - run:
             name: Build Docker image
