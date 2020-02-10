@@ -7,6 +7,9 @@ jobs:
       steps:
         - checkout
         - run:
+            name: install curl
+            command: apt-get install curl
+        - run:
             name: install docker
             command: |
                 set -x
