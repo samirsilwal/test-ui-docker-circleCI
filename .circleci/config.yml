@@ -8,4 +8,14 @@ jobs:
         - checkout
         - run:
             name: Build Docker image
-            command: sudo docker build -t samirsilwal/test-ui:latest 
+            command: docker build -t samirsilwal/test-ui:latest 
+
+
+workflows:
+    version: 2
+    build-master:
+      jobs:
+        - build:
+            filters:
+               branches:
+                  only: master
