@@ -2,7 +2,7 @@ version: 2.0
 jobs:
     build:
       docker:
-        - image: samirsilwal/test-ui:0.0.1
+        - image: circleci/buildpack-deps:stretch
 
       steps:
         - checkout
